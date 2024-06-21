@@ -1,6 +1,6 @@
 # Overview
 
-This repository is meant to help members of the Jovanovic lab navigate the Ginsburg HPC - one of Columbia's high-performance computing systems. 
+This repository is meant to help members of the Jovanovic lab navigate the Ginsburg HPC - one of Columbia's high-performance computing systems. This information is meant to supplement the official Ginsburg documentation not replace it. The official and most up-to-date documentation can be found [here](https://columbiauniversity.atlassian.net/wiki/spaces/rcs/pages/62141877/Ginsburg+HPC+Cluster+User+Documentation).
 
 # `docs/`
 
