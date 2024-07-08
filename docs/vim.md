@@ -23,7 +23,7 @@ You can experiment with installing `vim` or `nvim` yourself. It tends to be diff
 - `gg` = move to the top of the file
 - `G` = move to the bottom of the file
 
-To edit text you need to enter Insert mode. To enter Insert mode from Normal mode, simply type `i` and hit enter. You should see the mode change at the bottom of the screen. When in insert mode you should use the arrow keys to navigate and usual keys to type or delete characters (deleting is `Del` on MacOS and `Backspace` on Windows, just like normal). To re-enter Normal mode, press `Esc`.
+To edit text you need to enter Insert mode. To enter Insert mode from Normal mode, simply type `i`. You should see the mode change at the bottom of the screen. When in insert mode you should use the arrow keys to navigate and usual keys to type or delete characters (deleting is `Del` on MacOS and `Backspace` on Windows, just like normal). To re-enter Normal mode, press `Esc`.
 
 # Alternatives to `vim` (for using Ginsburg)
 
