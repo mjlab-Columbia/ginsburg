@@ -117,6 +117,26 @@ du -h -t 1G /burg/mjlab > /burg/mjlab/projects/utils/files.txt
 
 # `grep` - Search for text in files
 
+You can search for all lines that contain a specific string. For example, you can search for all lines in a bed file that contain "chr1":
+
+```bash
+grep "chr1" example.bed
+```
+
+You can use regular expressions also known as regex to search for more complicated character sequences. For example, the example above would match "chr1" but also "chr10", "chr11", and so on. We can search for just "chr1" by making our pattern (i.e. the text in the middle of the command) more specific:
+
+```bash
+grep "^chr1\s" example.bed
+```
+
+The `\s` looks for a whitespace character after chr1. The `^` ensures that we're looking for "chr1\s" at the beginning of each line. Since bed files have columns separated by tabs, this will only match lines where the the first column is "chr1". We can search for "chr1" and "chr2" like this:
+
+```bash
+grep "^chr[1|2]\s" example.bed
+```
+
+There's much more to regular expressions than this. You can learn more about the regex that `grep` uses [here](https://www.gnu.org/software/grep/manual/html_node/Regular-Expressions.html).
+
 # `find` - Find files
 
 The basic format for `find` is:
