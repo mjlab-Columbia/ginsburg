@@ -66,11 +66,13 @@ Sometimes it can be easier to search for directories that you know are large, bu
 find /burg/mjlab -type d -exec du -h -t 1G {} \;
 ```
 
-Again, you can direct this into a file with the `>` operator (also called the redirect operator).
+Again, you can direct this into a file with the `>` operator, also called the redirect operator. You can learn more about redirection [here](https://www.gnu.org/software/bash/manual/html_node/Redirections.html).
 
 ```bash
 find /burg/mjlab -type d -exec du -h -t 1G {} \; > /burg/mjlab/projects/utils/large_directories.txt
 ```
+
+Once you find the largest files you can either move them or delete them using `rm` or move them using `scp` or `rsync`. See `files.md` for more information on how to move files in and out of Ginsburg.
 
 # How fast can files be transferred in and out of Ginsburg?
 
